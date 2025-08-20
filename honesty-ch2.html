@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Honesty – Chapter 5</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.8;
+    }
+    .sidebar {
+      width: 250px;
+      background-color: #111;
+      position: fixed;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .sidebar h2 {
+      color: #f5f5f5;
+      margin-top: 0;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin: 15px 0;
+    }
+    .sidebar ul li a {
+      color: #ccc;
+      text-decoration: none;
+    }
+    .sidebar ul li a.active {
+      color: #fff;
+      font-weight: bold;
+    }
+    .content {
+      margin-left: 270px;
+      padding: 40px 20px;
+      max-width: 800px;
+    }
+    .content h1 {
+      margin-bottom: 25px;
+    }
+    .content p {
+      margin-bottom: 22px;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+    .nav-buttons a {
+      color: #fff;
+      text-decoration: none;
+      background: #333;
+      padding: 12px 20px;
+      border-radius: 5px;
+    }
+    .toggle-btn {
+      display: none;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: #333;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+      .content {
+        margin-left: 0;
+        padding: 20px;
+      }
+      .toggle-btn {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="toggle-btn" onclick="toggleSidebar()">☰ Menu</div>
+  
+  <div class="sidebar" id="sidebar">
+    <h2>Module: Honesty</h2>
+    <ul>
+      <li><a href="honesty.html">Intro</a></li>
+      <li><a href="honesty-ch1.html">Chapter 1</a></li>
+      <li><a href="honesty-ch2.html" class="active">Chapter 2</a></li>
+      <li><a href="honesty-ch3.html">Chapter 3</a></li>
+      <li><a href="honesty-ch4.html">Chapter 4</a></li>
+      <li><a href="honesty-ch5.html">Chapter 5</a></li>
+    </ul>
+  </div>
+
+    <div class="content">
+      <h1>Chapter 2: Honesty in Relationships</h1>
+
+      <p>In nature, everything is connected — rivers to oceans, roots to trees, air to breath. Connection is survival. But for humans, connection often becomes the very place where trust is broken.</p>
+
+      <p>Why do friends turn into enemies? Why do sons and daughters grow distant from their parents? It’s rarely because of distance. It’s because somewhere along the way, honesty disappeared — with them, and with ourselves.</p>
+
+      <blockquote>The first lie you ever told wasn’t to someone else. It was to yourself.</blockquote>
+
+      <p>You said “I’m fine” when you weren’t. That small lie became a mask. The mask became a personality. And the personality became a prison.</p>
+
+      <h2>My Second Year Story</h2>
+      <p>In my second year of university, I had found my people. Three of us, doing everything together — eating, laughing, even failing tests side by side. We were stupid in the best way. But somewhere along the way, something changed.</p>
+
+      <p>We were all goofy, but they could stay goofy in front of anyone. I couldn’t. That part of me — the loud, hyper side — was something I’d started hating back in high school. I thought it made people take me less seriously, like I wasn’t worth listening to. I carried that into uni, pretending I didn’t care… but the truth was, it ate at me.</p>
+
+      <p>Being around them brought that side of me out again. Some people would call it ADHD. All I knew was: I wanted to change. I thought, “If I stay friends with them, I’ll never grow up.” Maybe that was true. Maybe it wasn’t. But I made my decision.</p>
+
+      <p>I didn’t tell them the real reason. Instead, I lied — said my parents didn’t want me doing this or that. Slowly, I ignored their calls, skipped meetups, acted busy. In my head, I was protecting myself. But really, I was just avoiding an uncomfortable conversation.</p>
+
+      <p>It ended badly. I lost two of the closest friends I’d ever had. Not because we disagreed. Not because we grew apart. But because I wasn’t honest from the start. I became the bad guy in my own story.</p>
+
+      <h2>What Could Have Happened</h2>
+      <p>If I had told them the truth — that I was struggling with who I was, that I wanted to work on myself — maybe they wouldn’t have understood at first. Maybe they would’ve been hurt. But at least they would’ve known. At least trust would still be there.</p>
+
+      <p>That’s the thing about honesty: it doesn’t guarantee people will stay. But it guarantees that if they leave, they leave knowing the real you — not the fake one you made to avoid conflict.</p>
+
+      <h2>Why This Matters</h2>
+      <p>We tell ourselves we’re protecting others by keeping quiet, but deep down, we’re protecting ourselves from rejection. Silence is not love. Lies are not kindness.</p>
+
+      <p>In Christian University, we choose to speak truth — with kindness, with love, but without fear. Because without honesty, there can be no real connection.</p>
+
+    <div class="nav-buttons">
+      <a href="honesty-ch1.html">← Previous</a>
+      <a href="honesty-ch3.html">Next →</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.style.display = (sidebar.style.display === "none") ? "block" : "none";
+    }
+    if (window.innerWidth < 768) {
+      document.getElementById("sidebar").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
